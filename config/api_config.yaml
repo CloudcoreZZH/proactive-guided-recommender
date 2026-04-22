@@ -1,0 +1,8 @@
+# API 配置（请勿提交到 git）
+deepseek:
+  base_url: "https://api.deepseek.com"
+  model: "deepseek-chat"
+  temperature: 0.3
+  max_tokens: 1024
+  retry_times: 3
+  retry_delay: 1.0

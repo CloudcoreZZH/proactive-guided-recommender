@@ -1,0 +1,26 @@
+# 数据配置
+dataset:
+  name: "MovieLens-1M"
+  raw_path: "data/raw/ml-1m"
+  processed_path: "data/processed"
+  embeddings_path: "data/embeddings"
+
+preprocessing:
+  min_user_interactions: 5
+  min_item_interactions: 5
+  split_method: "leave_one_out"  # 按时间戳 Leave-One-Out
+
+ratings:
+  file: "ratings.dat"
+  separator: "::"
+  columns: ["user_id", "movie_id", "rating", "timestamp"]
+
+movies:
+  file: "movies.dat"
+  separator: "::"
+  columns: ["movie_id", "title", "genres"]
+
+users:
+  file: "users.dat"
+  separator: "::"
+  columns: ["user_id", "gender", "age", "occupation", "zip"]
